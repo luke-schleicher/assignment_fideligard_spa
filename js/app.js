@@ -9,7 +9,7 @@ fideligard.config(function($stateProvider, $urlRouterProvider) {
       url: "/",
       views: {
         'dateSlider': {
-          templateUrl: '/javascripts/templates/dateSlider.html',
+          templateUrl: '/js/templates/dateSlider.html',
           controller: 'DashCtrl',
         }
       }

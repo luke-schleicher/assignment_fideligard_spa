@@ -3,3 +3,21 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+.date-slider {
+  margin-bottom: 20px;
+}
+
+.stock-panel {
+  background: #bbb;
+  height: 400px;
+  text-align: center;
+  padding: 1px;
+}
+
+.trade-panel {
+  background: #bbb;
+  height: 350px;
+  text-align: center;
+  padding: 1px;
+}
