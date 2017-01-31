@@ -1,12 +1,8 @@
 <div class="date-slider"> 
   <div class="dateLabels">
     <div>{{ startDate | date }}</div>
-
     <div>{{ (currentDateInSeconds * 1000) | date }}</div>
-
     <div>{{ endDate | date }}</div>
   </div>
-
   <input type="range" min="{{ startDateInSeconds }}" max="{{ endDateInSeconds }}" step="86400" ng-model="currentDateInSeconds" ng-change="updateCurrentDate()">
-
 </div>

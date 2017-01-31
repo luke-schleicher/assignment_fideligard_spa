@@ -18,36 +18,16 @@ Wait until data retrieved, then process the data
   - Fills in weekend/holiday closing prices by finding most recent close price
 
 
-dates = {
+stocks = {
   '2016-12-28': {
     'AAPL': {
-      'closing price': 116.24,
-      '1 day ago': 836,
-      '7 days ago': 333,
-      '30 days ago': 38
+      'price': 116.24,
+      '1 day ago': 100,
+      '7 days ago': 90,
+      '30 days ago: 120'
     }
   }
 }
-
-stocks = {
-  'AAPL': {
-    symbol: 'AAPL',
-    closing_prices = {
-      (date: price),
-      2016-12-28: 116.76,
-      2016-12-29: 116.74
-    }    
-  }
-};
-
-company = {
-  symbol: 'AAPL',
-  closing_prices = {
-    (date: price),
-    2016-12-28: 116.76,
-    2016-12-29: 116.74
-  }
-};
 
 
 TRANSACTION

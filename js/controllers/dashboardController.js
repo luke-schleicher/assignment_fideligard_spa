@@ -1,4 +1,9 @@
-fideligard.controller('DashCtrl', ['$scope', 'dateService', function dashCtrl($scope, dateService) {
+fideligard.controller('DashCtrl', ['$scope', 'dateService', function DashCtrl($scope, dateService) {
+
+  var initializeDateObject = function() {
+    dateService.initializeDateObject();
+  };
+  initializeDateObject();
 
   var getStartDate = function() {
     $scope.startDate = dateService.getStartDate();

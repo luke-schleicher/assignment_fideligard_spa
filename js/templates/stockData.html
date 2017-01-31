@@ -1,0 +1,28 @@
+<div class="stock-data">
+
+  <h1>Stocks</h1>
+
+  <label> Filter
+    <input type="text" ng-model="search">
+  </label>
+
+  <table class="table table-striped">
+    <tr>
+      <th>Symbol</th>
+      <th>Price</th>
+      <th>1d</th>
+      <th>7d</th>
+      <th>30d</th>
+      <th>Trade?</th>
+    </tr>
+    <tr ng-repeat="(key, stock) in stocks | stockFilter: search" stock-data>
+      <td>{{ key }}</td>
+      <td>{{ stock.price | currency }}</td>
+      <td>{{ stock["1 day ago"] | currency }}</td>
+      <td>{{ stock["7 days ago"] | currency }}</td>
+      <td>{{ stock["30 days ago"] | currency }}</td>
+      <td><a ui-sref="trade">Trade</td>
+    </tr>
+  </table>
+
+</div>
